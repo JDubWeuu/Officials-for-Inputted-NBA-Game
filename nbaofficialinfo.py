@@ -3,9 +3,9 @@ from tensorflow import keras
 import numpy as np
 import pandas as pd
 
-referee_data = pd.read_csv('csv/officials.csv', usecols=['game_id', 'first_name', 'last_name'])
+referee_data = pd.read_csv('officials.csv', usecols=['game_id', 'first_name', 'last_name'])
 
-game_data = pd.read_csv('csv/game.csv')
+game_data = pd.read_csv('game.csv')
 
 game_data['game_date'] = game_data['game_date'].str.split(' ').str[0]
 
